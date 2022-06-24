@@ -9,11 +9,11 @@
     <v-row class="mt-4 mb-4">
       <v-col class="text-right"><label>Fecha Inicio</label></v-col>
       <v-col class="text-left">
-        <input type="datetime-local" v-model="fechaInicio"/>
+        <input type="date" v-model="fechaInicio"/>
        
       </v-col>
       <v-col class="text-right"><label>Fecha Termino</label></v-col>
-      <v-col class="text-left"><input type="datetime-local" v-model="fechaTermino"/></v-col>
+      <v-col class="text-left"><input type="date" v-model="fechaTermino"/></v-col>
       <v-col><v-btn
           color="#F9CD7A"
           elevation="4"
@@ -21,12 +21,13 @@
       >Filtrar</v-btn></v-col>
     </v-row>
   </v-container>
-  <v-container v-if="load">
+  <v-container v-if="load" class="mt-4 text-center mb-4">
     <div v-if="filter && load" >
       <v-btn
           color="#F9CD7A"
           elevation="4"
           v-on:click="getCupones()"
+          class="mb-4"
       >Reset</v-btn>
     </div>
     <TablaCupones id="tabla" :tabla="cupones" :filter="filter"></TablaCupones>

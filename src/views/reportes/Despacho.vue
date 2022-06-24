@@ -24,12 +24,13 @@
           >Filtrar</v-btn></v-col>
         </v-row>
     </v-container>
-    <v-container v-if="load">
+    <v-container v-if="load" class="text-center">
       <div v-if="filter && load" class="form-container">
         <v-btn
             color="#F9CD7A"
             elevation="4"
             v-on:click="getDespachos()"
+            class="mb-4"
         >Reset</v-btn>
       </div>
       <TablaDespacho :tabla="despachos" :filter="filter"></TablaDespacho>

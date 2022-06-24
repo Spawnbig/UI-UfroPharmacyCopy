@@ -46,27 +46,27 @@ export default {
               r.data.forEach(e => {
                 let year = e.fechaExpiracion.slice(0,4)
                 let month = e.fechaExpiracion.slice(5,7)
-                if (year == this.annio && month == '01' && e.activo){
+                if (year == this.annio && month == '01'){
                   this.loadedData[0]++
-                }else if (year == this.annio && month == '02' && e.activo){
+                }else if (year == this.annio && month == '02'){
                   this.loadedData[1]++
-                }else if (year == this.annio && month == '03' && e.activo){
+                }else if (year == this.annio && month == '03'){
                   this.loadedData[2]++
-                }else if (year == this.annio && month == '04' && e.activo){
+                }else if (year == this.annio && month == '04'){
                   this.loadedData[3]++
-                }else if (year == this.annio && month == '05' && e.activo){
+                }else if (year == this.annio && month == '05'){
                   this.loadedData[4]++
-                }else if (year == this.annio && month == '06' && e.activo){
+                }else if (year == this.annio && month == '06'){
                   this.loadedData[5]++
-                }else if (year == this.annio && month == '07' && e.activo){
+                }else if (year == this.annio && month == '07'){
                   this.loadedData[6]++
-                }else if (year == this.annio && month == '08' && e.activo){
+                }else if (year == this.annio && month == '08'){
                   this.loadedData[7]++
-                }else if (year == this.annio && month == '09' && e.activo){
+                }else if (year == this.annio && month == '09'){
                   this.loadedData[8]++
-                }else if (year == this.annio && month == '10' && e.activo){
+                }else if (year == this.annio && month == '10'){
                   this.loadedData[9]++
-                }else if (year == this.annio && month == '11' && e.activo){
+                }else if (year == this.annio && month == '11'){
                   this.loadedData[10]++
                 }else if (e.activo){
                   this.loadedData[11]++

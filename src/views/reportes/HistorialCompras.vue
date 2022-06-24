@@ -21,11 +21,12 @@
         </v-row>
     </v-container>
     <v-container v-if="load">
-      <v-container v-if="filter && load" >
+      <v-container v-if="filter && load" class="text-center mt-4">
       <v-btn
           color="#F9CD7A"
           elevation="4"
           v-on:click="getProductos()"
+          class="mb-4"
       >Reset</v-btn>
       </v-container>
       <TablaHistorialCompras :tabla="compras" :filter="filter"></TablaHistorialCompras  >

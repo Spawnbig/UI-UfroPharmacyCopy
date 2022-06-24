@@ -23,6 +23,7 @@ export default {
           },
           { text: 'Codigo', value: 'codigo',sortable: false },
           { text: 'Porcentaje Descuento', value: 'porcentajeDescuento',sortable: true },
+          { text: 'Especificacion', value: 'especificacion',sortable: false},
           { text: 'Fecha Expiracion', value: 'fechaExpiracion',sortable: true }
         ],
       }

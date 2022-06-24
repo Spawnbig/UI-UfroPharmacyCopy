@@ -10,11 +10,11 @@
         <v-row class="mt-4 mb-4">
           <v-col class="text-right xd"><label>Fecha Inicio</label></v-col>
           <v-col class="text-left">
-            <input type="datetime-local" v-model="fechaInicio"/>
+            <input type="date" v-model="fechaInicio"/>
           
           </v-col>
           <v-col class="text-right"><label>Fecha Termino</label></v-col>
-          <v-col class="text-left"><input type="datetime-local" v-model="fechaTermino"/></v-col>
+          <v-col class="text-left"><input type="date" v-model="fechaTermino"/></v-col>
           <v-col><v-btn
               color="#F9CD7A"
               elevation="4"
@@ -23,11 +23,12 @@
         </v-row>
       </v-container>
       <v-container>
-        <v-container v-if="filter && load">
+        <v-container v-if="filter && load" class="text-center mt-4">
           <v-btn
               color="#F9CD7A"
               elevation="4"
               v-on:click="getProductos()"
+              class="mb-4"
           >Reset</v-btn>
         </v-container>
         <TablaDescuentos :tabla="productos" :filter="filter"></TablaDescuentos>

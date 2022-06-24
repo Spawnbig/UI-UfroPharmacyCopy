@@ -13,6 +13,7 @@
           color="#F9CD7A"
           elevation="4"
           v-on:click="getProductos()"
+          class="mb-4"
       >Reset</v-btn>
     </v-container>
     <v-container v-if="load" class="text-center mt-4">

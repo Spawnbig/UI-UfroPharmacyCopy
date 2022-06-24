@@ -26,7 +26,6 @@ export default {
           { text: 'Fecha Expiracion', value: 'fechaExpiracion',sortable: true },
           { text: 'Categoria',value: 'categoria'},
           { text: 'Marca', value: 'marca'},
-          { text: 'Activo', value: 'activo'}
         ],
       }
     },
