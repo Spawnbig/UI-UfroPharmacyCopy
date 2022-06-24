@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+
+*{
+  font-family: 'Manrope', sans-serif;
+}
+
+.icon{
+  height: 45px;
+}
+
+.subtitulo{
+  font-size: 1em;
+}
+
+#bottom-table {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}

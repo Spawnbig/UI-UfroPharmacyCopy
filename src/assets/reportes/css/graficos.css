@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+*{
+  font-family: 'Manrope', sans-serif;
+}
+
+.titulo{
+    text-align: center;
+    margin: 0 auto 0 auto;
+  }
+  #container-graph{
+    margin: 0 auto 0 auto;
+    max-width: 35vw;
+  }
+  
+.container-buttons button {
+      color: #ffffff;
+      background-color: #60aa4a;
+      font-size: 19px;
+      border: 0px solid #ffffff;
+      border-radius: 28px;
+      padding: 15px 30px;
+      cursor: pointer;
+    margin: 10px;
+  }
+  
+.container-buttons  .exportar{
+    background-color:  #820025  ;
+  }
+  .exportar:hover {
+    background-color:  #C70039 ;
+  }
+  
+  
+  button:hover {
+      color: #ffffff;
+      background-color: #30d327;
+  }
+  
+  .container-buttons{
+    text-align: center;
+  }
